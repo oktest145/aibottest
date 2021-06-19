@@ -1,0 +1,185 @@
+
+{
+  "name": "Rashmika-ai",
+  "description": "?",
+  "keywords": [
+    "telegram",
+    "Rashmika AI",
+    "plugin",
+    "telegram-rashmika-ai",
+    "TG"
+  ],
+  "repository": "",
+  "website": "",
+  "success_url": "t.me/Ironman_cloud",
+  "buildpacks": [
+   {
+     "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+   },
+   {
+     "url": "heroku/python"
+   }     
+  ],    
+  "env": {
+    "APP_ID": {
+      "description": "Get this value from my.telegram.org! Please do not steal",
+      "value": "3960698",
+      "required": true
+    },
+    "APP_HASH": {
+      "description": "Get this value from my.telegram.org! Please do not steal",
+      "value": "51d4e95e2d205efa9e947d779ef33673",
+      "required": true
+    },
+    "SENTRY_API_KEY": {
+      "description": "Hmm leave it. Only for PRO's, Get this value from sentry.io/account/settings/authtokens",
+      "value": "",
+      "required": false
+    },
+    "MONGO_URI": {
+      "description": "Create A Database In Mongodb And Get URL",
+      "value": "mongodb+srv://rashmika:KlXP8sn5xKhSj9yv@cluster0.zjud5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+      "required": true
+      
+    },
+    "MONGO_PORT": {
+      "description": "Dont change",
+      "value": "27017",
+      "required": false
+    },
+    "MONGO_DB": {
+      "description": "Don't change.",
+      "value": "DaisyX",
+      "required": false
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Your heroku app name (not compulsory)",
+      "value": "",
+      "required": false  
+    },
+    "HEROKU_API_KEY": {
+      "description": "Your heroku api key (not compulsory)",
+      "value": "",
+      "required": false  
+    },
+    "UPSTREAM_REPO_URL": {
+      "description": "Only for fork users else don't change",
+      "value": "https://github.com/ChankitSaini/QueerAIAdvance",
+      "required": false  
+    },
+    "API_PORT": {
+      "description": "Don't change.",
+      "value": "8080"
+    },
+    "REDIS_URI": {
+      "description": "Get from redislabs.com",
+      "value": "redis-14700.c212.ap-south-1-1.ec2.cloud.redislabs.com",
+      "required": true
+    },
+    "REDIS_PORT": {
+      "description": "Get from redislabs.com",
+      "value": "14700",
+      "required": true
+    },
+    "REDIS_PASS": {
+      "description": "Get from redislabs.com",
+      "value": "z6B1bsxeqfOoanWxqk1pDkIPZRjgxeth",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "Your Id",
+      "value": "1371803729",
+      "required": true
+    },
+    "OPERATORS": {
+      "description": "Space seperated list of sudoes",
+      "value": "sudo",
+      "required": true
+    },
+    "SUPPORT_CHAT": {
+      "description": "support chat id",
+      "value": "-1001379332960",
+      "required": true
+    },
+    "LYDIA_API_KEY": {
+      "description": "AI chat",
+      "value": "",
+      "required": false
+    },
+    "DATABASE_URL": {
+      "description": "get from elephantsql.com",
+      "value": "postgres://ztgittxw:NOcO7BquBu_LU_Ofc_2CaCyy6cbFzDIo@john.db.elephantsql.com/ztgittxw",
+      "required": true
+    },
+    "VIRUS_API_KEY": {
+      "description": "Cloudmersive api (no need)",
+      "value": "",
+      "required": false
+    },
+    "TIME_API_KEY": {
+      "description": "Time api key (no need)",
+      "value": "",
+      "required": false
+    },
+    "REM_BG_API_KEY": {
+      "description": "remove.bg api (no need)",
+      "value": "",
+      "required": false
+    },
+    "SW_API": {
+      "description": "Spamwatch api @SpamWatchBot",
+      "value": "zjbKaUSoi48SIsKrKoanHra4k7Cvz_iM6FwwHNsugXuXkR7VhsBGnn70socH_jXA",
+      "required": true
+    },
+    "IBM_WATSON_CRED_URL": {
+      "description": "IBM_WATSON_CRED_URL (no need)",
+      "value": "",
+      "required": false
+    },
+    "IBM_WATSON_CRED_PASSWORD": {
+      "description": "IBM_WATSON_CRED_PASSWORD (no need)",
+      "value": "",
+      "required": false
+    },
+    "OPENWEATHERMAP_ID": {
+      "description": "weather api (no need)",
+      "value": "",
+      "required": false
+    },
+    "WOLFRAM_ID": {
+      "description": "WOLFRAM ai api (no need)",
+      "value": "",
+      "required": false
+    },
+    "DEBUG_MODE": {
+      "description": "DEBUG_MODE (no need)",
+      "value": "False",
+      "required": false
+    },
+    "LOAD_MODULES": {
+      "description": "Don't edit",
+      "value": "True",
+      "required": false
+    },
+    "LOGS_CHANNEL_ID": {
+      "description": "Id of your log group/channel",
+      "value": "-1001477708798",
+      "required": true
+    },
+    "ALLOW_FORWARDS_COMMANDS": {
+      "description": "ALLOW_FORWARDS_COMMANDS",
+      "value": "False",
+      "required": false
+    },
+    "TOKEN": {
+      "description": "Tg bot token by @BotFarther",
+      "value": "1843466474:AAFNiHm-TbSCr5wmIMsoD_-8H7VXaJc7XKU",
+      "required": true
+    },
+    "STRING_SESSION": {
+      "description": "run repl run And get your String Session",
+      "value": "BQBm3Hu5p-wpbi3OdB480922Nc8lXdrr5nuEa_D8QttZfEUM2KrwtYzBmzDRh5g3nYY-gpUib2wuMUQjAKW4SLMNHM5KItG5X7MsOfL78Y2uApf4VfHEQI4x5h6POhxZiBcBNjaMHXyH-kj1k-b-FtWNGlFF21fWyDlwrrOFwgihUqutWl9FXxXEAhi0VEF071wgJePrcU5pLQwBzODiHtV1zb5FgWPiGmGhmzfOWAVoyfnVf1bc4jdIC0Jy9fXw3J-ZuFYeykhQK-JYQtdkanGOOQJogYYcYB7KbkdUjYr8DsO00UniD4-zgDYuT-GBKX3GUiZJCsMNQl-U9na3aEFbUcQQUQA",
+      "required": true
+    }
+  }
+}
