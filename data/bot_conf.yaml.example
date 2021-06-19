@@ -14,7 +14,9 @@ STRING_SESSION: ""
 
 MONGO_URI: ""
 
-MONGO_URI2: ""
+MONGO_URI2: "mongodb+srv://dfsdfX:dfsfdX@cluster0.df4j.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+
+
 MONGO_PORT: 27017
 MONGO_DB': 'DaisyX'
 
